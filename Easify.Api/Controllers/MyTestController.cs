@@ -20,4 +20,11 @@ public class MyTestController : ControllerBase
         await Task.Delay(0);
         return Ok("Hello and etc. etc.");
     }
+
+    [HttpGet("test2")]
+    public async Task<IActionResult> RunTest2()
+    {
+        await Task.Delay(0);
+        return Ok("Hello");
+    }
 }
