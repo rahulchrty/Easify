@@ -21,8 +21,8 @@ public class MyTestController : ControllerBase
         return Ok("Hello and etc. etc.");
     }
 
-    [HttpGet("test2")]
-    public async Task<IActionResult> RunTest2()
+    [HttpGet("test3")]
+    public async Task<IActionResult> RunTest3()
     {
         await Task.Delay(0);
         return Ok("Hello");
