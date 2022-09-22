@@ -29,4 +29,11 @@ public class WeatherForecastController : ControllerBase
         })
         .ToArray();
     }
+
+    [HttpGet("Test")]
+    public async Task<IActionResult> RunTest()
+    {
+        await Task.Delay(0);
+        return Ok("Hello");
+    }
 }
